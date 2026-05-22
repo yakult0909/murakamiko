@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お問い合わせ | 村上工務店</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/logo-sheep.png" alt="村上工務店の羊ロゴ"><span>村上工務店</span></a>
+    <nav class="nav" aria-label="主要メニュー">
+      <a href="index.html">トップ</a><a href="works.html">施工事例</a><a href="company.html">会社概要</a><a href="price.html">早さと予算</a><a class="nav-cta" href="contact.html" aria-current="page">お問い合わせ</a>
+    </nav>
+  </header>
+  <main class="contact-page">
+    <section class="contact-intro">
+      <p class="eyebrow">Contact</p>
+      <h1>まずは1分で相談内容を送信。</h1>
+      <p>詳しい金額や日程は、送信後にメールで確認します。写真がある場合は、返信メールで送っていただく想定です。</p>
+      <div class="contact-shortcuts">
+        <a href="tel:0300000000">電話する</a>
+        <a href="mailto:info@murakami-koumuten.example">メールする</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+      </div>
+    </section>
+    <form class="contact-form" action="mailto:info@murakami-koumuten.example" method="post" enctype="text/plain">
+      <label>お名前<input name="name" autocomplete="name" required></label>
+      <label>メールアドレス<input type="email" name="email" autocomplete="email" required></label>
+      <label>電話番号<input type="tel" name="tel" autocomplete="tel"></label>
+      <label>相談したい内容
+        <select name="service" required>
+          <option value="">選択してください</option>
+          <option>壁紙の張替え</option>
+          <option>クリーニング</option>
+          <option>お風呂リフォーム</option>
+          <option>トイレリフォーム</option>
+          <option>その他</option>
+        </select>
+      </label>
+      <label>希望時期<select name="timing"><option>できるだけ早く</option><option>1か月以内</option><option>時期は相談したい</option></select></label>
+      <label>ご住所または施工エリア<input name="area" placeholder="例：東京都〇〇区"></label>
+      <label class="wide">相談内容<textarea name="message" rows="5" placeholder="例：ワンルームの壁紙張替えを10万円前後で相談したいです。"></textarea></label>
+      <button class="button primary submit" type="submit">お問い合わせを送る</button>
+    </form>
+  </main>
+  <footer class="footer"><p>© 村上工務店</p><div><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><a href="https://x.com/" target="_blank" rel="noreferrer">X</a></div></footer>
+</body>
+</html>
